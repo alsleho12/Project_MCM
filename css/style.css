@@ -13,7 +13,7 @@ header, main, footer{
 
 /* gnb/loginPage클릭시 바깥 배경을 어둡게 설정하기위한 div 시작 */
 #blackbg{
-    position:absolute;
+    position:fixed;
     top:80px;
     left:0;
     width:100%;
@@ -110,11 +110,11 @@ header, main, footer{
 
 /* gnb부분 시작 */
 #gnb{
-    position: absolute;
+    position: fixed;
     width: 70%;
     height: 100%;
     left:-100%;
-    /* background: #fff; */
+    background: #fff;
     display:none;
     z-index: 999;
 }
@@ -152,7 +152,7 @@ header, main, footer{
     text-indent: 20px;
     padding: 15px 0;
     border-bottom:1px solid #ccc;
-    background: #fff;
+
 }
 
 #gnb>ul>li:nth-child(8)>a{
@@ -213,7 +213,6 @@ header, main, footer{
 .depth2{
     display: none;
     padding-top:15px;
-    background: #fff;
 }
 
 .depth2>li>a{
