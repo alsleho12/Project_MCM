@@ -178,12 +178,13 @@
             <div id="event">
                 <ul>
                     <li class="movie"><img src="./images/l1.jpg" alt="사진1">
-                        <a href="#">
+                        <a href="http://www.youtube.com/embed/x786dttMBbU?rel=0&amp;wmode=transparent" class="ytb">
                             <ul class="e_play">
                                 <li>
                                     <div>▶</div>
                                 </li>
                             </ul>
+
                         </a>
 
                         <ul class="event_main">
@@ -396,6 +397,27 @@ $(".shopping").click(function(){
     $("#clickme1").html( + count);
     return false;
 });
+
+$(document).ready(function(){
+        
+    
+});
+
+
+
+$(document).ready(function () {
+    var $containerWidth = $(window).width();
+
+    if ($containerWidth > 768) {
+        $('.ytb').colorbox({speed:500, opacity:0.5, iframe:true, innerWidth:'80%', innerHeight:'80%', maxWidth:'80%', maxHeight:'80%'});
+    }
+
+    if ($containerWidth < 767) {
+        $('.ytb').colorbox({speed:500, opacity:0.5, iframe:true, innerWidth:'80%', innerHeight:'50%', maxWidth:'80%', maxHeight:'50%'});
+    }
+    
+});
+
 
 </script>
 </html>
