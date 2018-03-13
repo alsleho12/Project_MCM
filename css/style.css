@@ -80,13 +80,13 @@ header, main, footer{
     width: 30px;
     height: 30px;
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 1.571rem;
     line-height: 33px;
     color: #666;
 }
 
 .fa-bars, .fa-shopping-bag{
-    font-size: 30px;
+    font-size: 2.143rem;
 }
 
 .logo{
@@ -111,7 +111,7 @@ header, main, footer{
 /* gnb부분 시작 */
 #gnb{
     position: fixed;
-    width: 70%;
+    width: 60%;
     height: 100%;
     left:-100%;
     background: #fff;
@@ -132,10 +132,11 @@ header, main, footer{
 #sh{
     width: 100%;
     height: 30px;
-    font-size: 16px;
+    font-size: 1.143rem;
     background: #ccc;
     margin-left:18px;
     color: #fff;
+    border: 1px solid #ccc;
 }
 
 #search>a{
@@ -147,7 +148,7 @@ header, main, footer{
 #gnb>ul>li>a{
     position: relative;
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
     text-indent: 20px;
     padding: 15px 0;
     border-bottom:1px solid #ccc;
@@ -169,16 +170,16 @@ header, main, footer{
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 25%;
+    top: 30%;
     right: 50px;
     transform: translateY(-50%);
-    font-size: 30px;
+    font-size: 1.857rem;
 }
 
 #gnb>ul>li:nth-child(8)>a::after{
     content: ">";
     display: block;
-    font-size: 20px;
+    font-size: 1.429rem;
     font-weight: 200;
     width: 25px;
     height: 25px;
@@ -196,7 +197,7 @@ header, main, footer{
 #gnb>ul>.gko>a::after{
     content: ">";
     display: block;
-    font-size: 20px;
+    font-size: 1.429rem;
     font-weight: 200;
     width: 25px;
     height: 25px;
@@ -216,7 +217,7 @@ header, main, footer{
 .depth2>li>a{
     display: block;
     padding:8px;
-    font-size: 14px;
+    font-size: 0.857rem;
     text-indent: 20px;
 }
 /* gnb부분 끝 */
