@@ -1,0 +1,573 @@
+@charset "utf-8";
+
+/* All Mobile Code */
+
+#wrap{
+    width: 100%;
+}
+
+header, main, footer{
+    position: relative;
+    width: 100%;
+}
+
+/* gnb/loginPage클릭시 바깥 배경을 어둡게 설정하기위한 div 시작 */
+#blackbg{
+    position:fixed;
+    top:80px;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:99;
+    background: rgba(0,0,0,0.5);
+    display:none;
+}
+
+/* 헤더 시작 */
+/* 헤더 부분 아이콘과 로고 css 시작 */
+#headerIn{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+    /* 밑부분에 그림자를 넣어주는것
+    box-shadow: X Y 불러값 색상값(0,0,0,0.5);(반투명) */
+    z-index:100; 
+}
+
+.nav{
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.shopping{
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+.nav{
+    left:10px;
+}
+
+
+
+.nav>a, .shopping>a{
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.fa-shopping-bag{
+    padding-right: 10px;
+
+}
+
+.shopping>a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#666;
+}
+
+
+.nav>a>span, .shopping>a>span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 33px;
+    color: #666;
+}
+
+.fa-bars, .fa-shopping-bag{
+    font-size: 30px;
+}
+
+.logo{
+    width: 178px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.logo>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: 15px;
+}
+
+.logo>a>img{
+    width: 100%;
+    height: 100%;
+}
+/* 헤더 부분 아이콘과 로고 css끝 */
+
+/* gnb부분 시작 */
+#gnb{
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    left:-100%;
+    background: #fff;
+    display:none;
+    z-index: 999;
+}
+
+#search{
+    width: 100%;
+    height: 60px;
+    border-bottom:1px solid #ccc;
+    background: #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sh{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    background: #ccc;
+    margin-left:18px;
+    color: #fff;
+}
+
+#search>a{
+    display: block;
+    position: relative;
+    right: 22px;
+}
+
+#gnb>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    text-indent: 20px;
+    padding: 15px 0;
+    border-bottom:1px solid #ccc;
+}
+
+#gnb>ul>li:nth-child(8)>a{
+    display: block;
+    line-height: 10px;   
+    border-bottom:none;
+}
+#gnb>ul>li:nth-child(8)>a:last-child{
+    border-bottom:1px solid #ccc;
+}
+
+
+#gnb>ul>li>a::after{
+    content: "+";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 25%;
+    right: 50px;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+#gnb>ul>li:nth-child(8)>a::after{
+    content: ">";
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 62%;
+    right: 41px;
+    transform: translateY(-50%);
+}
+
+.dfont{
+    display: block;
+}
+
+#gnb>ul>.depth1>a::after,
+#gnb>ul>.gko>a::after{
+    content: ">";
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 45%;
+    right: 41px;
+    transform: translateY(-50%);
+}
+
+
+
+.depth2{
+    display: none;
+    padding-top:15px;
+}
+
+.depth2>li>a{
+    display: block;
+    padding:8px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+/* gnb부분 끝 */
+/* 헤더 부분 끝 */
+
+/* 메인부분 시작 */
+
+#mainVisuel{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main_img{
+    position: relative;
+    margin:50px 0 10px 0;
+}
+
+.main_img>ul>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main_img>ul>a>img{
+    width: 100%;
+    height: 100%;
+}
+
+.main_box{
+    position: absolute;
+    top: -13px;
+    right:0;
+    width: 55%;
+    top:50%;
+    transform: translateY(-50%);
+    height: 110%;
+    background: rgba(51,102,153,0.5);
+}
+
+.main_font{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 45%;
+    height: 60%;
+    top:50%;
+    right:22%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.5);
+    border: 1px solid #ccc;
+    z-index: 2;
+}
+.main_font>ul>li>span{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top:10px;
+}
+.main_font>ul>li:nth-child(1)>span{
+    font-size: 1.714rem;
+    font-weight: 600;
+}
+.main_font>ul>li:nth-child(2)>span{
+    font-size: 1rem;
+}
+
+.main_font>ul>li:nth-child(3)>span{
+    font-size: 0.857rem;
+    font-weight: 600;
+    margin-top:15px;
+    
+}
+
+.z{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.z>img{
+    width: 43px;
+    height: 30px;
+}
+
+#event{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#event>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#event>ul>li{
+    position: relative;
+    margin-bottom:30px;
+}
+
+#event>ul>li>img{
+    width: 100%;
+    height: 100%;
+}
+
+.event_main{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(255,255,255,0.5);
+}
+
+address{
+    text-align: center;
+    font-size: 1rem;
+    margin-top:5px;
+}
+
+
+.e_mfont{
+    font-weight: 600;
+}
+
+/* .e_mfont:hover{
+    color:#666;
+} */
+
+.e_font1{ 
+    font-size: 1.571rem;
+    font-weight: 600;
+}
+
+/* .e_font1>a:hover{
+    color:#666;
+}
+ */
+
+.e_font2{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom:5px;
+}
+
+/* .e_font2>a:hover{
+    color:#666;
+}
+ */
+.event_main>li>span{
+    display: block;
+    text-align: center;
+}
+
+.e_play{
+    position: absolute;
+    text-align: center;
+    padding: 4%;
+    top:40%;
+    left:43%;
+    border: 1px solid #000;
+    font-size: 1.429rem;
+    background: rgba(255,255,255,0.5);
+}
+
+/* .e_play:hover{
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #fff;
+    color: #fff;
+} */
+
+#event>ul>li:last-child{
+    margin: 0;
+}
+
+/* btn부분 시작 (사진 페이지 부분) */
+.sum_btn{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.sum_btn>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sum_btn>ul>li{
+    width: 100%;
+    height: auto;
+    margin-bottom:15px;
+}
+
+.sum_btn>ul>li>a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.btns>img{
+    width: 100%;
+    height: 100%;
+}
+
+.sbtn{
+    display: block;
+    position: absolute;
+    top:0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 2.143em;
+    color: #fff;
+    text-indent: 20px;
+    z-index: 99;
+}
+
+.bbg{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999;
+    background: rgba(0,0,0,0.3);
+}
+/* btn부분 끝 (사진 페이지 부분) */
+
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+}
+
+#fnav{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#fnav>ul>li{
+    background: rgb(26,26,26);
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+#fnav>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 1.143rem;
+    color: #fff;
+    padding: 5px 0;
+    text-indent: 10px;
+    font-weight: 600;
+}
+
+.fsns{
+    padding:30px 0;
+}
+
+.sns_icon>li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 40%;
+    margin-left:20px;
+}
+
+.sns_icon>li>a{
+    display: block;
+    font-size: 1.714rem;
+    color:#fff;
+}
+
+.knum, .knum1{
+    display: block;
+    width: 90%;
+    font-style: normal;
+    font-size: 0.857rem;
+    color: #ccc;
+    padding: 5px 0;
+    margin-left:20px;
+    line-height: 24px;
+}
+
+.knum1>img{
+    margin-top:5px;
+    margin-left:10px;
+}
+.knum1{
+    margin-bottom:20px;
+}
+
+.f_font{
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.f_font>ul>li>a{
+    display: block;
+    width: 90%;
+    font-style: normal;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px 0;
+    margin-left:20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.f_bottom1{
+    margin-bottom:20px;
+}
+
+.flogo{
+    width: 100%;
+    height: 50px;
+    padding: 20px 0;
+    display: none;
+}
+
+.flogo>a{
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 80px;
+    background: url("../images/flogo.png") no-repeat;
+    margin: 0 auto;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+/* 풋터 아이콘 링크 시작 */
+
+/* footer 끝 */
+
+
+@media all and (min-width:768px){
+
+}
+
+
+@media all and (min-width:1200px){
+    
+}

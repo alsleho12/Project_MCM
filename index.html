@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="js/jquery.colorbox.js"></script>
+    <title>MCM반응형</title>
+</head>
+<body>
+    <!-- 전체적인 모바일 공간 시작-->
+    <div id="wrap">
+        <!-- gnb클릭시 바깥 배경을 어둡게 설정하기위한 div -->
+        <div id="blackbg"></div>
+
+        <header>
+            <!-- 헤더 부분 아이콘과 로고 시작 -->
+            <div id="headerIn">
+                <!-- 오픈메뉴버튼 -->  
+                <div class="nav">
+                    <a href="#"><span class="fas fa-bars"></span></a>
+                </div>
+                <!-- 로고 -->
+                
+                <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="logo"></a></h1>
+                <!-- 로그인아이콘버튼 -->
+                
+                <div class="shopping">
+                    <a href="#">
+                        <span class="fas fa-shopping-bag"></span>
+                        <span id="clickme1">0</span>
+                    </a>
+                </div>
+            </div> <!-- #headerIn -->
+            <!-- 헤더 부분 아이콘과 로고 끝 -->
+
+            <!-- 헤더의 네비게이션 시작 -->
+            <nav id="gnb">
+                <ul>
+                    <div id="search">
+                        <input type="text" name="search" id="sh" placeholder="Search">
+                        <a href="#"><img src="./images/srch_btn1.png" alt="검색"></a>
+                    </div>
+
+                    <li><a href="#">WOMEN</a>
+                        <ul class="depth2">
+                            <li><a href="#">AW 2017 SEASON OFF</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">NEW ARRIVALS</a></li>
+                            <li><a href="#">BAGS</a></li>
+                            <li><a href="#">BACKPACKS</a></li>
+                            <li><a href="#">SMALL LEATHER GOODS</a></li>
+                            <li><a href="#">ACCESSORLES</a></li>
+                            <li><a href="#">CLOTHINEG</a></li>
+                            <li><a href="#">SHOES</a></li>
+                            <li><a href="#">ZOO</a></li>
+                        </ul><!-- depth2 -->               
+                    </li>
+
+                    <li><a href="#">MEN</a>
+                        <ul class="depth2">
+                            <li><a href="#">AW 2017 SEASON OFF</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">NEW ARRIVALS</a></li>
+                            <li><a href="#">BAGS</a></li>
+                            <li><a href="#">BACKPACKS</a></li>
+                            <li><a href="#">SMALL LEATHER GOODS</a></li>
+                            <li><a href="#">BELTS</a></li>
+                            <li><a href="#">CLOTHING</a></li>
+                            <li><a href="#">ACCESSORLES</a></li>
+                            <li><a href="#">SHOES</a></li>
+                            <li><a href="#">SUN GLASSES</a></li>
+                            <li><a href="#">ZOO</a></li>                                                               
+                        </ul><!-- depth2 -->           
+                    </li>
+                    
+                    <li><a href="#">TRAVEL</a>
+                        <ul class="depth2">
+                            <li><a href="#">LUGGAGE</a></li>
+                            <li><a href="#">SMALL LEATHER GOOS</a></li>
+                            <li><a href="#">SUNGLASSES</a></li>                                                       
+                        </ul><!-- depth2 --> 
+                    </li>
+
+                    
+                    <li><a href="#">GIFTS</a>
+                        <ul class="depth2">
+                            <li><a href="#">AW 2017 SEASON OFF</a></li>
+                            <li><a href="#">FOR HER</a></li>
+                            <li><a href="#">FOR HIM</a></li>
+                            <li><a href="#">LUXE</a></li>
+                            <li><a href="#">UNDER $300</a></li>                                                            
+                        </ul><!-- depth2 --> 
+                    </li>
+
+                    <li><a href="#">COLLECTION</a>
+                        <ul class="depth2">
+                            <li><a href="#">AUTUMN / WINTER 2017</a></li>
+                            <li><a href="#">SPRING / SUMMER 2017</a></li>
+                            <li><a href="#">AUTUMN / WINTER 2016</a></li>
+                            <li><a href="#">SPRING SUMMER 2016</a></li>
+                            <li><a href="#">BEATS X MCM COLLECTION</a></li>                                                            
+                        </ul><!-- depth2 -->
+                    </li>
+                    
+                    <li><a href="#">ZEITGEIST</a>
+                        <ul class="depth2">
+                            <li><a href="#">MCM 뉴스</a></li>
+                            <li><a href="#">MCM 스토리</a></li>
+                            <li><a href="#">MCM 매장</a></li>                                                          
+                        </ul><!-- depth2 -->
+                    </li>
+
+                    <li class="gko">
+                        <a href="#">대한민국</a>
+                        <a href="#">한국어</a>                    
+                    </li>
+
+                    <li class="depth1"><a href="#">매장 위치 찾기</a></li><!-- depth1 -->
+
+                    <li class="depth1"><a href="#">고객센터</a></li><!-- depth1 -->
+
+                    <li><a href="#">ZEITGEIST</a>
+                        <ul class="depth2">
+                            <li><a href ="#">CALL CENTER<br><span class="dfont">1600-1976</span></a></li>
+                            <li><a href="#">1:1 문의 E-MAIL<br><span class="dfont">help@sungjoogroup.com</span></a></li>
+                            <li><a href="#">쇼핑 가이드</a></li>
+                            <li><a href="#">배송 및 반품</a></li>
+                            <li><a href="#">FAQ쇼핑 FAQ</a></li>                                                        
+                        </ul><!-- depth2 -->
+                    </li>
+
+                    <li class="depth1"><a href="#">주문배송</a></li><!-- depth1 -->
+                    
+                    <li class="depth1"><a href="#">로그인</a></li><!-- depth1 -->
+                </ul> 
+            </nav> <!-- #gnb -->
+            <!-- 헤더의 네비게이션 끝 -->
+        </header>
+        <!-- 헤더 끝 -->
+
+        <main>
+            <div id="mainVisuel">
+                <div class="main_img">
+                    <ul>
+                        <a href="#">
+                            <img src="./images/main.jpg" alt="메인사진">
+                        </a>
+
+                        <li>
+                            <div class="main_box"></div>
+                        </li>
+
+                        <li>
+                            <div class="main_font">
+                                <ul>
+                                    <li><span>BUSINESS OR<br>PLEASURE</span></li>
+                                    <li><span>모던한 미니멀리스트를 위한<br>혁신적인 악세사리</span></li>
+                                    <li><span><a href="#">지금구매하기 &nbsp;&nbsp;▶</a></span></li>
+                                </ul>
+                            </div><!-- .main_font -->
+                        </li>
+                    </ul>
+                </div><!-- .main_img -->
+            </div> <!-- #MainVisuel -->
+
+            <div class="z">
+                <img src="./images/z.png" alt="이음세">
+            </div> <!-- .z -->
+
+            <div id="event">
+                <ul>
+                    <li class="movie"><img src="./images/l1.jpg" alt="사진1">
+                        <a href="#">
+                            <ul class="e_play">
+                                <li>
+                                    <div>▶</div>
+                                </li>
+                            </ul>
+                        </a>
+
+                        <ul class="event_main">
+                            <li>
+                                <a href="#"><address class="e_mfont">MCM 이 선물합니다, LES TWINS 와 KACY HILL 이 함께 합니다</address></a>
+                                <span class="e_font1"><a href="#">'HOLIDAY CHEER'</a></span>
+                                <span class="e_font2"><a href="#">지금 구매하기</span></a>
+                            </li>
+                        </ul>
+                    </li><!-- .movie -->
+
+                    <li><img src="./images/r1.jpg" alt="사진1">
+                        <ul class="event_main">
+                            <li>
+                                <address>봄 / 여름 2018</address>
+                                <span class="e_font1"><a href="#">VIVA LIFE</a></span>
+                                <span class="e_font2"><a href="#">컬렉션 보러가기</a></span>
+                            </li>
+                        </ul>
+                    </li><!-- .event_main -->
+
+                    <li><img src="./images/l2.jpg" alt="사진2">
+                        <ul class="event_main">
+                            <li>
+                                <address>가을/겨울 2017</address>
+                                <span class="e_font1"><a href="#">30% OFF</a></span>
+                                <span class="e_font2"><a href="#">더보기</a></span>
+                            </li>
+                        </ul>
+                    </li><!-- .event_main -->
+
+                    <li><img src="./images/r2.jpg" alt="사진3">
+                        <ul class="event_main">
+                            <li>
+                                <address>가을/겨울 2017</address>
+                                <span class="e_font1"><a href="#">GIFTS TO DIE FOR</a></span>
+                                <span class="e_font2"><a href="#">SHOP LUXE GIFTS</a></span>
+                            </li>
+                        </ul>
+                    </li><!-- .event_main -->
+                </ul>
+            </div><!-- #event -->
+
+            <div class="z">
+                <img src="./images/z.png" alt="이음세">
+            </div> <!-- .z -->
+            
+            <div class="sum_btn">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="btns">
+                                <img src="./images/btn1.jpg" alt="#">
+                                <span class="sbtn">Story</span>
+                                <span class="bbg"></span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div class="btns">
+                                <img src="./images/btn2.jpg" alt="#">
+                                <span class="sbtn">News</span>
+                                <span class="bbg"></span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div class="btns">
+                                <img src="./images/btn3.jpg" alt="#">
+                                <span class="sbtn">Store</span>
+                                <span class="bbg"></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- .sum_btn -->
+            <!-- 메인 하단 사진 페이지 이동 링크 끝 -->
+
+        </main>
+
+
+        <footer>
+            <!-- 풋터 아이콘 링크 시작 -->
+            <nav id="fnav">
+                <ul>
+                    <li>
+                        <div class="fsns">
+                            <ul class="sns_icon">
+                                <li>
+                                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                    <a href="#"><span class="fab fa-twitter"></span></a>
+                                    <a href="#"><span class="fas fa-star"></span></a>
+                                    <a href="#"><span class="fab fa-youtube"></span></a>
+                                </li>
+                            </ul><!-- .sns_icon -->
+                        </div><!-- .fsns -->
+                    </li>
+                    <!-- 풋터 아이콘 링크 끝 -->
+
+                    <li>
+                        <div class="f_font">
+                            <ul class="f_bottom1">
+                                <li>
+                                    <a href="#"><span>자주 묻는 질문</span></a>
+                                    <a href="#"><span>1:1고객 문의</span></a>
+                                    <a href="#"><span>회원혜택</span></a>
+                                </li>
+                            </ul><!-- f_bottom1 -->
+
+                            <ul class="f_bottom2">
+                                <li>
+                                    <a href="#"><span>회사소개</span></a>
+                                    <a href="#"><span>온라인 서비스 이용 약관</span></a>
+                                    <a href="#"><span>개인정보 취급방법</span></a>
+                                    <a href="#"><span>오프라인 멤버십(MCLUB)</span></a>
+                                </li>
+                            </ul><!-- f_bottom2 -->
+                        </div><!-- .f_font -->
+                    </li>
+
+                    
+
+
+
+
+                    
+                    <!-- 풋터 로고 사진 시작 -->
+                    <li>
+                        <div class="flogo">
+                            <a href="#"></a>
+                        </div> <!-- .flogo -->
+                    </li>
+                    <!-- 풋터 로고 사진 끝 -->
+
+                    <!-- 풋터부분 주소와 설명글 시작 -->
+                    <li>
+                        <ul>
+                            <li>
+                                <span class="knum">
+                                    MCM | 서울 강남구 언주로 734 (논현동) | 성주디앤디 대표 윤명상<br>
+                                    개인정보관리책임자 : 박광열 | ㈜성주디앤디 사업자등록번호: 109-81-80289<br> 
+                                    ㈜성주디앤디 통신판매업신고번호: 강남 제 6851호<br>
+                                    Tel: 1600-1976 FAX: 070-7016-1956<br> 
+                                    E-mail: help@sungjoogroup.com<br>
+                                </span> <!-- .knum -->
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                <span class="knum1">
+                                    소비자피해 보상보험<img src="./images/fs.jpg" alt="#"><br>
+                                    고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서<br> 
+                                    가입한 구매안전 서비스 소비자피해보상보험 서비스를 이용하실<br>
+                                    수 있습니다. 보상대상: 미배송, 반품/환불거부, 쇼핑몰 부도<br>
+                                    서비스 가입사실 확인하기
+                                </span> <!-- .knum -->
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 풋터부분 주소와 설명글 끝 -->
+                </ul>
+            </nav> <!-- #fnav -->
+        </footer>
+    </div> <!-- #wrap -->
+</body>
+<script>
+/* gnb아코디언 1단메뉴 */
+/* gnb아이콘 클릭하면 로그인화면이 나오고 닫히는 스크립트 */
+    $(".nav>a").click(function(){
+    var poi = $("#gnb").css("display");
+    if(poi == "none"){
+        $("#gnb").show(300).animate({left:"0"});
+        $("#blackbg").fadeIn();
+        $("#loginPageIn").fadeOut(400);
+    }else if(poi == "block"){
+        $("#gnb").animate({left:"-100%"});
+        $("#gnb").fadeOut(200);
+        $(".depth2").slideUp();
+        $("#blackbg").fadeOut();
+    }
+    return false;
+});
+
+/* gnb 아코디언 2단메뉴 */
+$("#gnb>ul>li>a").click(function(){
+    var dis = $(this).siblings(".depth2");
+    /* 1.2단메뉴(.depth2)가 가지고 있는 display의 속성값을 변수안에 저장 */
+    var two = dis.css("display")
+    /* 2. depth2에 있는 여러정보가 담겨있는 tg라는 변수를 활용하여 그중 display의
+        속성값을 dis라는 변수 안에 넣어준다 */
+    if(two == "none"){
+        $(".depth2").slideUp();
+        dis.slideDown();
+    }else if(two == "block"){
+        dis.slideUp();
+    }
+    return false;
+});
+
+var count = 0;
+$(".shopping").click(function(){
+    count += 1;
+    $("#clickme1").html( + count);
+    return false;
+});
+
+</script>
+</html>

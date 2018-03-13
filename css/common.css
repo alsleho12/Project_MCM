@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+/* 0,noen : 속성의 초기화값 */
+
+a{
+    text-decoration:none;
+    color:#000;
+    /* a태그 구성에 생성되는 밑줄 제거 */
+
+}
+
+ul,li{
+    list-style-type :none;
+
+}
+
+img, input{
+    border:0;
+    vertical-align: top; /* CSS TRICK - 사용해야 아래에 공간이 남지 않는다 */
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html,body{
+    font-family:"맑은 고딕","arial",sans-serif;
+    font-size: 14px;
+       /*  font-size:14px;
+    line-helght: 21px */
+}
+
