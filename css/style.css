@@ -38,6 +38,10 @@ header, main, footer{
     z-index:100; 
 }
 
+#pcheader{
+    display: none;
+}
+
 .nav{
     position: relative;
     width: 30px;
@@ -208,8 +212,6 @@ header, main, footer{
     transform: translateY(-50%);
 }
 
-
-
 .depth2{
     display: none;
     padding-top:15px;
@@ -225,7 +227,6 @@ header, main, footer{
 /* 헤더 부분 끝 */
 
 /* 메인부분 시작 */
-
 #mainVisuel{
     width: 100%;
     height: 100%;
@@ -269,7 +270,7 @@ header, main, footer{
     right:22%;
     transform: translateY(-50%);
     background: rgba(255,255,255,0.5);
-    border: 1px solid #ccc;
+    border: 3px solid #fff;
     z-index: 2;
 }
 .main_font>ul>li>span{
@@ -277,7 +278,7 @@ header, main, footer{
     width: 100%;
     height: auto;
     text-align: center;
-    margin-top:10px;
+    margin-top:5%
 }
 .main_font>ul>li:nth-child(1)>span{
     font-size: 1.714rem;
@@ -290,7 +291,7 @@ header, main, footer{
 .main_font>ul>li:nth-child(3)>span{
     font-size: 0.857rem;
     font-weight: 600;
-    margin-top:15px;
+    margin-top:10%;
     
 }
 
@@ -349,19 +350,13 @@ address{
     font-weight: 600;
 }
 
-/* .e_mfont:hover{
-    color:#666;
-} */
 
 .e_font1{ 
     font-size: 1.571rem;
     font-weight: 600;
 }
 
-/* .e_font1>a:hover{
-    color:#666;
-}
- */
+
 
 .e_font2{
     font-size: 1rem;
@@ -369,10 +364,7 @@ address{
     margin-bottom:5px;
 }
 
-/* .e_font2>a:hover{
-    color:#666;
-}
- */
+
 .event_main>li>span{
     display: block;
     text-align: center;
@@ -389,11 +381,7 @@ address{
     background: rgba(255,255,255,0.5);
 }
 
-/* .e_play:hover{
-    background: rgba(0,0,0,0.5);
-    border: 1px solid #fff;
-    color: #fff;
-} */
+
 
 #event>ul>li:last-child{
     margin: 0;
@@ -406,11 +394,6 @@ address{
     margin: 0 auto;
 }
 
-.sum_btn>ul{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
 .sum_btn>ul>li{
     width: 100%;
@@ -425,10 +408,23 @@ address{
     height: auto;
 }
 
-.btns>img{
+.btns1, .btns2, .btns3{
     width: 100%;
-    height: 100%;
+    height: 122px;
 }
+
+.btns1{
+    background: url("../images/mbtn1.jpg") no-repeat center / cover ;
+}
+
+.btns2{
+    background: url("../images/mbtn2.jpg") no-repeat center / cover ;
+}
+
+.btns3{
+    background: url("../images/mbtn3.jpg") no-repeat center / cover ;
+}
+
 
 .sbtn{
     display: block;
@@ -516,7 +512,7 @@ footer{
     margin-top:5px;
     margin-left:10px;
 }
-.knum1{
+.knum{
     margin-bottom:20px;
 }
 
@@ -560,16 +556,541 @@ footer{
     transform: translateY(-50%);
     z-index: 99;
 }
+
+.cpy{
+    display: block;
+    font-size: 1rem;
+    padding: 5px 0;
+}
 /* 풋터 아이콘 링크 시작 */
 
 /* footer 끝 */
 
 
 @media all and (min-width:768px){
+    .nav{
+        left:20px;
+    }
+    .shopping{
+        right: 10px;
+    }
 
+    #gnb>ul>li>a{
+        font-size: 1.143rem;
+        text-indent: 20px;
+        padding: 20px 0;
+    }
+    
+    #gnb>ul>li>a::after{
+        bottom:35%;
+        font-size: 2rem;
+    }
+    
+    .depth2>li>a{
+        display: block;
+        padding:8px;
+        font-size: 1rem;
+        text-indent: 20px;
+    }
+
+    .main_font>ul>li>span{
+        margin-top:8%;
+    }
+    .main_font>ul>li:nth-child(1)>span{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .main_font>ul>li:nth-child(2)>span{
+        font-size: 1.286rem;
+    }
+    
+    .main_font>ul>li:nth-child(3)>span{
+        font-size: 1.143rem;
+        font-weight: 600;
+    }
+    
+    #event{
+        width: 100%;
+    }
+    
+    #event>ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
+    
+    #event>ul>li{
+        width: 48%;
+    }
+
+    .e_mfont{
+        font-size: 0.857rem; 
+    }
+    
+    .e_play{
+        font-size: 1.571rem;
+    }
+
+    #event>ul>li:last-child{
+        margin-bottom:30px;
+    }
+    #event>ul>li:nth-child(2),
+    #event>ul>li:nth-child(4){
+        position: relative;
+        top:30px;
+    }
+
+    .sum_btn{
+        width:100%;
+        height: 100%;
+    }
+
+    .sum_btn>ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sum_btn>ul>li>a{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .sbtn{
+        font-size: 2rem;
+    }
+
+    .btns1, .btns2, .btns3{
+        width: 100%;
+        height: 154px;
+    }
+    
+    .btns1{
+        background: url("../images/tbtn1.jpg") no-repeat center / cover ;
+    }
+    
+    .btns2{
+        background: url("../images/tbtn2.jpg") no-repeat center / cover ;
+    }
+    
+    .btns3{
+        background: url("../images/tbtn3.jpg") no-repeat center / cover ;
+    }
+
+    .sns_icon>li{
+        width: 25%;
+        margin-left:52%;
+    }
+
+    .sns_icon>li>a{
+        font-size: 2rem;
+    }
+
+    .f_knum>li{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    f_knum>ul>li>{
+        display: block;
+        width: 100%;
+        font-style: normal;
+        font-size: 0.857rem;
+    }
+
+    .knum1>img{
+        margin-top:5px;
+        margin-left:10px;
+    }
+
+    .knum1{
+        margin-top:-5%;
+    }
+
+    .f_font{
+        display: flex;
+        justify-content: space-between;
+        margin-top:-11%;
+    }
+
+    .f_bottom2{
+        margin-right: 55%;
+    }
+
+
+    .f_font>ul>li>a{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .f_bottom1{
+        margin-bottom:20px;
+    }
+
+}
+
+@media all and (min-width:900px){
+    .f_font{
+        padding-top:20px;
+    }
+
+    .sns_icon>li{
+        margin-left:60%;
+    }
+    
+    .knum1{
+        margin-left:12%;
+    }
 }
 
 
 @media all and (min-width:1200px){
+    #headerIn{
+        display:none;
+    }
+
+    #wrap{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #pcheader{
+        display: block;
+    }
+  
+    #pheaderIn{
+        width: 1200px;
+        height: 40px;
+        margin: 0 auto;
+    }
     
+
+
+    #putill{
+        width: 100%;
+        height: 40px; 
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #putill>ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #putill>ul>li>a{
+        display: block;
+        height: 20px;
+        font-size: 14px;
+        padding:0 19px;
+        line-height: 20px;
+    }
+    
+    #putill>ul:nth-child(1)>li:first-child>a>img{
+        margin-top:1px;
+    }
+
+    #putill>ul:nth-child(1)>li:first-child>a{
+        padding-left:0;
+    }
+    
+    #putill>ul:nth-child(2)>li:last-child>a{
+        padding-right:0;
+    }
+    
+    #pbottom{
+        width:960px;
+        height: 140px;
+        margin: 0 auto;
+    }
+    
+    .plogo{
+        position: absolute;
+        top :-45px;
+        left:44%;
+        width: 100px;
+        height: 50px;
+    }
+    
+    #pgnb{
+        position: relative;
+        width: 960px;
+        height: 140px;
+        padding: 10px 0;
+        top:40px;
+    }
+
+    #pgnb>ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #pgnb>ul>li{
+        position: relative;
+    }
+    #pgnb>ul>li>a{
+        display: block;
+        width: 150px;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 5px 0;
+        text-indent: 10px;
+    }
+    
+    #pgnb>ul>li:last-child>a{
+        width: 85px;
+    }
+
+    #pgnb>ul>li:nth-child(6)>a{
+        width: 170px;
+    }
+    
+    .pdepth2{
+        position: absolute;
+        width: 200px;
+        margin-top:20px;
+        background: #fff;
+        z-index: 999;
+        display: none;  
+    }
+
+    .pdepth2>li>a{
+        display: block;
+        padding: 8px 0;
+        text-indent: 10px;
+    }
+    
+    #mainVisuel{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .main_font{
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 30%;
+        height: 40%;
+        top:50%;
+        right:30%;
+        transform: translateY(-50%);
+        background: rgba(255,255,255,0.5);
+        border: 3px solid #fff;
+        z-index: 2;
+    }
+    .main_font>ul>li>span{
+        display: block;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top:7%
+    }
+    .main_font>ul>li:nth-child(1)>span{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .main_font>ul>li:nth-child(2)>span{
+        font-size: 1.286rem;
+    }
+    
+    .main_font>ul>li:nth-child(3)>span{
+        font-size: 1.143rem;
+        font-weight: 600;
+        margin-top:10%;
+    }
+
+    .main_font>ul>li:nth-child(3)>span>a:hover{
+        color:#666;
+    }
+    
+    #event{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #event>ul{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #event>ul>li{
+        width: 49%;
+    }
+
+    #event>ul>li:nth-child(1),
+    #event>ul>li:nth-child(3){
+        margin-right: 12px;
+    }
+
+    #event>ul>li:nth-child(2),
+    #event>ul>li:nth-child(4){
+        margin-left: 12px;
+    }
+
+    .e_play:hover{
+        background: rgba(0,0,0,0.5);
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    
+    .e_mfont:hover{
+        color:#666;
+    }
+
+    .e_font1>a:hover{
+        color:#666;
+    }
+
+    .e_font2>a:hover{
+        color:#666;
+    }   
+   
+    .sum_btn{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .sum_btn>ul{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .btns1, .btns2, .btns3{
+        width: 100%;
+        height: 240px;
+        margin-bottom:30px;
+        
+    }
+
+    .btns1:hover, .btns2:hover, .btns3:hover{
+        background-size: 420px 300px;
+    }
+    
+    .btns1{
+        background: url("../images/btn1.jpg") no-repeat center / cover ;
+    }
+    
+    .btns2{
+        background: url("../images/btn2.jpg") no-repeat center / cover ;
+    }
+    
+    .btns3{
+        background: url("../images/btn3.jpg") no-repeat center / cover ;
+    }
+    
+    .sbtn{
+        font-size: 2.571rem;
+    }
+
+    .sbtn:hover{
+        position: relative;
+        top: 90px;
+        left:115px;
+        color:#33ccff;
+        font-size: 3rem;
+        transition: all 0.5s;
+
+    }
+
+    #fnav{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .sns_icon>li{
+        position: relative;
+        right:125px;
+        width: 20%;
+        margin-left:auto;
+        
+    }
+
+    .f_knum>li{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    f_knum>ul>li>{
+        display: block;
+        width: 100%;
+        font-style: normal;
+        font-size: 0.857rem;
+    }
+
+    .knum1>img{
+        margin-top:5px;
+        margin-left:10px;
+    }
+
+    .knum1{
+        position: relative;
+        left:120px;
+        margin-top:0;
+        
+    }
+
+    .f_bottom2{
+        margin-right: 60%;
+    }
+
+    .f_font{
+        display: flex;
+        justify-content: space-between;
+        margin-top:-9%;
+    }
+
+
+    .f_font>ul>li>a{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .z{
+        padding: 50px 0;
+    }
+     
+    .pshopping{
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        top:10px;
+        right: -120px;
+    }
+    
+    .pshopping>a{
+        display: block;
+        width: 100%;
+        height: 30px;
+    }
+    
+    .pshopping>a{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color:#666;
+    }
+    
+    
+    .pshopping>a>span{
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        font-size: 1.571rem;
+        line-height: 33px;
+        color: #666;
+    }
+
 }
