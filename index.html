@@ -18,9 +18,11 @@
     <!-- 전체적인 모바일 공간 시작-->
     <div id="wrap">
         <!-- gnb클릭시 바깥 배경을 어둡게 설정하기위한 div -->
-        <div id="blackbg"></div>
+        
 
         <header>
+        <div id="mheader">
+            <div id="blackbg"></div>
             <!-- 헤더 부분 아이콘과 로고 시작 -->
             <div id="headerIn">
                 <!-- 오픈메뉴버튼 -->  
@@ -142,6 +144,7 @@
                     <li class="depth1"><a href="#">로그인</a></li><!-- depth1 -->
                 </ul> 
             </nav> <!-- #gnb -->
+        </div> <!-- #mheader -->
             <!-- 헤더의 네비게이션 끝 -->
             
             <!-- PC헤더 네비게이션 -->
@@ -152,7 +155,7 @@
                         <ul>
                             <li><a href="#"><img src="./images/gg.png" alt="대한민국사진">대한민국</a></li>
                             <li><a href="#">한국어</a></li>
-                            <li><a href="#">매장위치</a></li>
+                            <li><a href="#" class="store">매장위치</a></li>
                         </ul>
 
                         <ul>
@@ -211,7 +214,7 @@
                             </ul>                       
                         </li>
 
-                        <h1 class="plogo">
+                        <h1 class="plogo">  
                             <a href="index.html">
                                 <img src="./images/plogo.png" alt="로고">
                             </a>
@@ -254,15 +257,173 @@
                         </a>
                     </div>
                 </nav><!-- #pgnb -->
-
-               
             </div><!-- #pbottom -->
         </div> <!-- #pcheader -->
+
+        <!-- 모바일헤더의 로그인 페이지 시작 -->
+
+        <nav id="loginPage">
+            <div id="loginPageIn">
+                <ul>
+                    <li>
+                        <div>
+                            <ul class="plogo">
+                                <li>
+                                    <p><a href="#"><span class="close">X</span></a></p>
+                                    <a href="#"><img src="./images/llogo.png" alt="로그인로고"></a>
+                                    <p><a href="#">도움말</a></p>
+                                </li>
+                            </ul>
+                        </div> <!-- .plogo -->
+                    </li>
+
+                    <li>
+                        <div class="page">
+                            <ul>
+                                <li>
+                                    <input type="text" name="login" id="login" placeholder="기존ID 혹은 이메일ID">
+                                </li>
+
+                                <li>
+                                    <input type="password" name="password" id="pw" placeholder="비밀번호를 입력해주세요.">
+                                </li>
+                            </ul> 
+                        </div> <!-- .page -->
+                    </li>
+
+                    <li>
+                        <div class="l1">
+                            <a href="#">
+                                로그인
+                            </a>
+                        </div> <!-- .l1 -->
+
+                        <div class="l2">
+                            <ul>
+                                <li>
+                                    <a href="#">회원가입 | 아이디/비밀번호 찾기</a> 
+                                </li>
+                            </ul> 
+                        </div> <!-- .l2 -->
+                    </li>
+
+                    <li>
+                        <div class="iconpage">
+                            <ul>
+                                <li class="picon1">
+                                    <a href="#">
+                                        <img src="./images/na.png" alt="네이버아이콘">
+                                        <span>네이버 계정 로그인</span>
+                                    </a>
+                                </li> <!-- .picon1 -->
+                                
+                                <li class="picon2">
+                                    <a href="#">
+                                        <img src="./images/fa.png" alt="페이스북아이콘">
+                                        <span>페이스북 계정 로그인</span>
+                                    </a>
+                                </li> <!-- .picon2 -->
+
+                                <li class="picon3">
+                                    <a href="#">
+                                        <img src="./images/po.png" alt="휴대폰아이콘">
+                                        <span>휴대폰 번호 로그인</span>
+                                    </a> <!-- .picon3 -->
+                                </li>
+                            </ul>
+                        </div> <!-- .iconpage -->
+                    </li>
+                </ul>
+            </div> <!-- #loginPageIn -->
+        </nav> <!-- #loginPage -->
             
         </header>
         <!-- 헤더 끝 -->
 
         <main>
+        
+            <div id="findstore">
+                    <a href="#"><img src="./images/close.png" alt=""></a>
+                        <div class="searchbox">
+                            <div class="box1">
+                                <p>지역 검색</p>
+                                <select class="selbox" onchange="setSelectText('searchSubCate',this)">
+                                <option value="first">지역 선택</option>
+                                <option value="map1">서울</option>
+                                <option value="map2">인천</option>
+                                <option value="map3">대전</option>
+                                <option value="map4">대구</option>
+                                <option value="map5">광주</option>
+                                <option value="map6">울산</option>
+                                <option value="map7">부산</option>
+                                <option value="map8">경기</option>
+                                <option value="map9">충북</option>
+                                <option value="map10">경북</option>
+                                <option value="map11">경남</option>
+                                <option value="map12">전북</option>
+                                <option value="map13">제주</option>
+                            </select>
+                            
+                            <button><a href="#">검색</a></button>
+                            
+                            </div>
+                            
+                            <div class="box2">
+                                <p>매장/동네 검색</p>
+                                <input type="text" name="school" maxlength="12" placeholder=" 매장명 또는 동네를 입력해주세요" class="sksearch" />
+                                
+                                <button><a href="#">검색</a></button>
+                                
+                            </div>
+                            
+                            <img src="./images/mapimg.jpg" alt="">
+                        </div>
+                        
+                        <div class="map">
+                            <div id="map1" class="mm"> 
+                            <img src="./images/seoul.jpg" alt="선택이미지1"> </div>
+                            
+                            <div id="map2" class="mm"> 
+                            <img src="./images/ic.jpg" alt="선택이미지2"> </div>
+                            
+                            <div id="map3" class="mm"> 
+                            <img src="./images/dj.jpg" alt="선택이미지3"> </div>
+                            
+                            <div id="map4" class="mm"> 
+                            <img src="./images/dg.jpg" alt="선택이미지4"> </div>
+                            
+                            <div id="map5" class="mm"> 
+                            <img src="./images/gj.jpg" alt="선택이미지5"> </div>
+                            
+                            <div id="map6" class="mm"> 
+                            <img src="./images/us.jpg" alt="선택이미지6"> </div>
+                            
+                            <div id="map7" class="mm"> 
+                            <img src="./images/bs.jpg" alt="선택이미지7"> </div>
+                            
+                            <div id="map8" class="mm"> 
+                            <img src="./images/kk.jpg" alt="선택이미지8"> </div>
+                            
+                            <div id="map9" class="mm"> 
+                            <img src="./images/cb.jpg" alt="선택이미지10"> </div>
+                            
+                            <div id="map10" class="mm"> 
+                            <img src="./images/kb.jpg" alt="선택이미지12"> </div>
+                            
+                            <div id="map11" class="mm"> 
+                            <img src="./images/kn.jpg" alt="선택이미지13"> </div>
+                            
+                            <div id="map12" class="mm"> 
+                            <img src="./images/jb.jpg" alt="선택이미지14"> </div>
+                            
+                            <div id="map13" class="mm"> 
+                            <img src="./images/jj.jpg" alt="선택이미지16"> </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="blackbg2"></div>
+
             <div id="mainVisuel">
                 <div class="main_img">
                     <ul>
@@ -559,6 +720,66 @@ $(document).ready(function () {
             $(this).removeClass("on");
         }
     });
+
+    $(".store").on("click",function(){
+        var poi = $("#findstore").css("display");
+        if(poi == "none"){
+            $("#findstore").fadeIn(300)
+            $(".blackbg2").fadeIn();
+        }
+        return false;
+    });
+
+    $("#findstore>a").on("click",function(){
+        $("#findstore").fadeOut(800);
+        $(".blackbg2").fadeOut(500);
+        
+        return false;
+    });
+
+    $(".selbox").change(function(){
+        $(".mm").hide();
+        $("#"+$(this).val()).show();
+    });
+
+    $("#gnb>ul>li:last-child>a").on("click",function(){
+        var poi = $("#loginPageIn").css("display");
+        if(poi == "none"){
+            $("#loginPageIn").fadeIn(300);
+            $(".blackbg2").fadeIn();
+            $("#gnb").fadeOut();
+            $(".depth2").slideUp();
+        }
+        return false;
+    });
+
+    $("#putill>ul:last-child>li:last-child>a").on("click",function(){
+        var poi = $("#loginPageIn").css("display");
+        if(poi == "none"){
+            $("#loginPageIn").fadeIn(300);
+            $(".blackbg2").fadeIn();
+            $("#gnb").fadeOut();
+            $(".depth2").slideUp();
+        }
+        return false;
+    });    
+
+    /* 사람아이콘 클릭후 X표시 클릭시 닫히는 스크립트 */
+    $(".close").click(function(){
+        var poi = $("#loginPageIn").css("display");
+        if(poi == "block"){
+            $("#loginPageIn").fadeOut(400);
+            $(".blackbg2").fadeIn();
+            $(".blackbg2").fadeOut();
+            $("#blackbg").fadeOut();
+            $(".depth2").slideUp();
+        }
+        return false;
+    });
+
+
+    
+
 
 
 </script>

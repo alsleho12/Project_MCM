@@ -224,7 +224,194 @@ header, main, footer{
     text-indent: 20px;
 }
 /* gnb부분 끝 */
+
+/* loginPage부분 시작 */
+#loginPage{
+    width: 100%;
+    height: auto;
+}
+
+#loginPageIn{
+    margin: 0 auto;
+    background: #fff;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:none;
+    z-index: 999;
+}
+
+.plogo{
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+ 
+}
+
+.plogo>li{
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    padding-top: 20px;
+}
+
+.plogo>li>a{
+    display: block;
+    font-weight: 600;
+    color: #666;
+}
+
+.close{
+    font-size: 1.714rem;
+    line-height: 22px;
+}
+
+.plogo>li>a>img{
+    width: 97px;
+    height: 100px;
+    margin-top:50px;
+    margin-left: 40px;
+    padding: 40px 0;
+}
+
+.page{
+    width: 80%;
+    height: auto;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.page>ul>li{
+    width: 100%;
+    height: auto;
+    padding: 4px 0;
+}
+
+#login, #pw{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    padding: 10px 0;
+    text-indent: 10px;
+    color: #333;
+}
+
+.l1{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.l1>a{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #333;
+    padding: 5px 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.l2{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.l2>ul{
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+
+.l2>ul>li{
+    width: 100%;
+    height: auto;
+}
+
+
+.l2>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+
+.iconpage{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.iconpage>ul>li{
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+    margin-bottom:15px;
+}
+
+.iconpage>ul>li>a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconpage>ul>li:nth-child(1){
+    background: #1db91d;
+}
+
+.iconpage>ul>li:nth-child(2){
+    background: #0362ad;    
+}
+
+.iconpage>ul>li:nth-child(3){
+    background: #ccc;
+}
+
+.iconpage>ul>li>a>img{
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.iconpage>ul>li>a>span{
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: 600;
+    text-align: center;
+    color:#fff;
+}
+
+.blackbg2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1920px;
+    height: 100%;
+    background: #000;
+    z-index: 3;
+    opacity: 0.6;
+    display: none;
+}
+
+/* loginPage부분 끝 */
 /* 헤더 부분 끝 */
+
+#findstore{
+    display: none;
+}
 
 /* 메인부분 시작 */
 #mainVisuel{
@@ -291,7 +478,7 @@ header, main, footer{
 .main_font>ul>li:nth-child(3)>span{
     font-size: 0.857rem;
     font-weight: 600;
-    margin-top:10%;
+    margin-top:5%;
     
 }
 
@@ -563,7 +750,6 @@ footer{
     padding: 5px 0;
 }
 /* 풋터 아이콘 링크 시작 */
-
 /* footer 끝 */
 
 
@@ -591,6 +777,13 @@ footer{
         padding:8px;
         font-size: 1rem;
         text-indent: 20px;
+    }
+    
+    #loginPageIn{
+        top: 100px;
+        left: 27%;
+        width: 45%;
+        height: 85%;
     }
 
     .main_font>ul>li>span{
@@ -748,8 +941,8 @@ footer{
 
 
 @media all and (min-width:1200px){
-    #headerIn{
-        display:none;
+    #mheader, #blackbg{
+        display: none;
     }
 
     #wrap{
@@ -768,8 +961,6 @@ footer{
         margin: 0 auto;
     }
     
-
-
     #putill{
         width: 100%;
         height: 40px; 
@@ -810,19 +1001,24 @@ footer{
     }
     
     .plogo{
-        position: absolute;
-        top :-45px;
-        left:44%;
-        width: 100px;
-        height: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    .plogo>a{
+        display: block;
+        position: relative;
+        top:-30px;
+        right: 15px;
     }
     
+
     #pgnb{
         position: relative;
+        top:15px;
         width: 960px;
         height: 140px;
         padding: 10px 0;
-        top:40px;
     }
 
     #pgnb>ul{
@@ -867,6 +1063,7 @@ footer{
         text-indent: 10px;
     }
     
+
     #mainVisuel{
         width: 1200px;
         height: auto;
@@ -1066,7 +1263,7 @@ footer{
         position: absolute;
         width: 60px;
         height: 30px;
-        top:10px;
+        top:48px;
         right: -120px;
     }
     
@@ -1080,7 +1277,7 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        color:#666;
+        color:#000;
     }
     
     
@@ -1091,7 +1288,181 @@ footer{
         margin: 0 auto;
         font-size: 1.571rem;
         line-height: 33px;
-        color: #666;
+        color: #000;
+    }
+    
+    #findstore{
+        position: fixed;
+        width: 1230px;
+        height: 767px;
+        background: #f8f8f8;
+        z-index: 99;
+        top: 110px;
+        left: 340px;
+        display: none;
+    }
+    
+    #findstore>a{
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 0;
+        background: #000;
+        z-index: 100;
+    }
+    
+    #findstore>a img{
+        width: 50px;
+        height: 50px;
+        margin: 5px 5px;
+    }
+    
+    
+    #findstore>div{
+        float: left;
+    }
+    
+    .searchbox{
+        width: 400px;
+        height: 767px;
+        border-right: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+    
+    .searchbox:before{
+        content: "";
+        display: block;
+        width: 399px;
+        height: 137px;
+        background: url("../images/searchboxtop.jpg");
+    }
+    
+    .box1{
+        margin-top: 50px;
+    }
+    
+    .box1 p{
+        width: 200px;
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    
+    .selbox{
+        width: 283px;
+        height: 50px;
+        background: #eee;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    
+    .box1 button{
+        width: 65px;
+        height: 50px;
+        margin-left: 10px;
+        border: 0;
+        background: #000;
+        border-radius: 5px;
+    }
+    
+    .box1 button a{
+        display: block;
+        width: 65px;
+        height: 50px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 50px;
+    }
+    
+    
+    .box2{
+        margin-top: 30px;
+    }
+    
+    .box2 p{
+        width: 200px;
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    
+    .sksearch{
+        width: 278px;
+        height: 50px;
+        background: #eee;
+        margin-top: 5px;
+        margin-left: 20px;
+        border: 1px solid #aaa;
+        padding-left: 5px;
+    }
+    
+    .box2 button{
+        width: 65px;
+        height: 50px;
+        margin-top:5px;
+        margin-left: 10px;
+        border: 0;
+        background: #000;
+        border-radius: 5px;
+    }
+    
+    .box2 button a{
+        display: block;
+        width: 65px;
+        height: 50px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 50px;
+    }
+    
+    
+    .searchbox>img{
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+    }
+    
+    
+    .map{
+        width: 830px;
+        height: 767px;
+    }
+    
+    .map>div{
+        position: absolute;
+        top: 0;
+        right: 0;
+        
     }
 
+    .blackbg2{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 1920px;
+        height: 100%;
+        background: #000;
+        z-index: 3;
+        opacity: 0.6;
+        display: none;
+    }
+    
+    #loginPage{
+        width: 100%;
+        height:100%;
+    }
+    
+    #loginPageIn{
+        left: 34.5%;
+        width: 30%;
+    }
+    
+    .plogo{
+        position: relative;
+        top:2%;
+        left:0%;
+        width: 100%;
+        height: auto;
+    }
+    
 }
